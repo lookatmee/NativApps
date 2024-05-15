@@ -2,7 +2,7 @@
 
 ¡Bienvenido a NativApps!
 
-![NativApps Logo](insertar-enlace-a-imagen)
+![NativApps Logo](https://i0.wp.com/tribe10x.com/wp-content/uploads/2022/12/logo-nativeApp.png?resize=1080%2C336&ssl=1)
 
 NativApps es una API diseñada para evaluar y mejorar las habilidades de desarrollo de aplicaciones .NET backend. Ofrece operaciones CRUD para usuarios y productos, junto con características de seguridad para garantizar un entorno robusto y seguro.
 
