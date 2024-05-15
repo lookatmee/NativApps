@@ -23,8 +23,13 @@ public class ProductsController : ControllerBase
         Mapper = mapper;
     }
 
+    /// <summary>
+    /// Crea un nuevo producto.
+    /// </summary>
+    /// <param name="productDto">Los datos del nuevo producto.</param>
+    /// <returns>El producto creado.</returns>
     [HttpPost]
-    [Authorize(Roles = "Administrador")]
+    [Authorize(Roles = "Admin")]
     public async Task<ActionResult<ProductResponseDto>> CreateProduct(ProductDto productDto)
     {
         try
@@ -40,8 +45,14 @@ public class ProductsController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Actualiza un producto existente.
+    /// </summary>
+    /// <param name="id">El ID del producto que se va a actualizar.</param>
+    /// <param name="productDto">Los datos actualizados del producto.</param>
+    /// <returns>El producto actualizado.</returns>
     [HttpPut("{id}")]
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> UpdateProduct(Guid id, ProductDto productDto)
     {
         try
@@ -63,8 +74,13 @@ public class ProductsController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Elimina un producto existente.
+    /// </summary>
+    /// <param name="id">El ID del producto que se va a eliminar.</param>
+    /// <returns>Respuesta sin contenido.</returns>
     [HttpDelete("{id}")]
-    //[Authorize]
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> DeleteProduct(Guid id)
     {
         try
@@ -78,6 +94,10 @@ public class ProductsController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Obtiene una lista de todos los productos.
+    /// </summary>
+    /// <returns>Una lista de productos.</returns>
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductResponseDto>>> GetProducts()
     {
@@ -92,6 +112,11 @@ public class ProductsController : ControllerBase
         }
     }
 
+    /// <summary>
+    /// Obtiene un producto por su ID.
+    /// </summary>
+    /// <param name="id">El ID del producto.</param>
+    /// <returns>El producto encontrado o NotFound si no se encuentra.</returns>
     [HttpGet("{id}")]
     public async Task<ActionResult<ProductResponseDto>> GetProductById(Guid id)
     {
@@ -113,14 +138,20 @@ public class ProductsController : ControllerBase
             return StatusCode((int)HttpStatusCode.InternalServerError, string.Format(Constants.ErrorMessages.GetProductByIdError, id));
         }
     }
-    
 
+    /// <summary>
+    /// Busca productos según el nombre, precio mínimo y precio máximo.
+    /// </summary>
+    /// <param name="name">El nombre del producto a buscar.</param>
+    /// <param name="minPrice">El precio mínimo del producto a buscar.</param>
+    /// <param name="maxPrice">El precio máximo del producto a buscar.</param>
+    /// <returns>Una lista de productos que coinciden con los criterios de búsqueda.</returns>
     [HttpGet("search")]
     public async Task<ActionResult<IEnumerable<ProductResponseDto>>> SearchProducts(string? name, decimal? minPrice, decimal? maxPrice)
     {
         try
         {
-            var products = await _productService.SearchAsync(new FilterSearch { Name = name, MinPrice = minPrice, MaxPrice = maxPrice});
+            var products = await _productService.SearchAsync(new FilterSearch { Name = name, MinPrice = minPrice, MaxPrice = maxPrice });
             return Ok(Mapper.Map<List<ProductResponseDto>>(products));
         }
         catch (ApplicationException ex)

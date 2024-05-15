@@ -1,0 +1,16 @@
+# Ignorar directorios de Visual Studio
+.vs/
+# Ignorar directorios binarios y de objetos generados por la compilación
+**/bin/
+**/obj/
+# Ignorar archivos de configuración específicos de tu proyecto
+appsettings.json
+# Ignorar archivos de seguimiento de cambios específicos de Visual Studio
+.vs/NativApps/DesignTimeBuild/.dtbcache.v2
+.vs/NativApps/v17/.suo
+# Ignorar archivos de índice de contenido de Visual Studio
+.vs/NativApps/FileContentIndex/
+# Ignorar archivos de seguimiento de cambios específicos de la compilación
+NativApps.Products.Core/obj/Debug/net6.0/NativApps.Products.Core.sourcelink.json
+NativApps.Products.Data/obj/Debug/net6.0/NativApps.Products.Data.sourcelink.json
+ProductManagementAPI/obj/Debug/net6.0/ProductManagementAPI.sourcelink.json

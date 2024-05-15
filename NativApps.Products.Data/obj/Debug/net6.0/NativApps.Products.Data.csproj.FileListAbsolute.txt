@@ -15,3 +15,4 @@ C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Data\obj\Debug\n
 C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Data\bin\Debug\net6.0\NativApps.Products.Core.dll
 C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Data\bin\Debug\net6.0\NativApps.Products.Core.pdb
 C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Data\obj\Debug\net6.0\NativApp.C34DA149.Up2Date
+C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Data\obj\Debug\net6.0\NativApps.Products.Data.sourcelink.json

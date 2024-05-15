@@ -9,3 +9,4 @@ C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Core\obj\Debug\n
 C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Core\obj\Debug\net6.0\refint\NativApps.Products.Core.dll
 C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Core\obj\Debug\net6.0\NativApps.Products.Core.pdb
 C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Core\obj\Debug\net6.0\ref\NativApps.Products.Core.dll
+C:\Users\adolf\OneDrive\Escritorio\NativApps\NativApps.Products.Core\obj\Debug\net6.0\NativApps.Products.Core.sourcelink.json

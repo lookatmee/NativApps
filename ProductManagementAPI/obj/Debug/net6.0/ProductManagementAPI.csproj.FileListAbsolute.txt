@@ -283,3 +283,4 @@ C:\Users\adolf\OneDrive\Escritorio\NativApps\ProductManagementAPI\bin\Debug\net6
 C:\Users\adolf\OneDrive\Escritorio\NativApps\ProductManagementAPI\bin\Debug\net6.0\NativApps.Products.Data.pdb
 C:\Users\adolf\OneDrive\Escritorio\NativApps\ProductManagementAPI\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\adolf\OneDrive\Escritorio\NativApps\ProductManagementAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\adolf\OneDrive\Escritorio\NativApps\ProductManagementAPI\obj\Debug\net6.0\ProductManagementAPI.sourcelink.json
